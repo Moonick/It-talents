@@ -1,0 +1,19 @@
+<script>
+    while (isNaN(numberN) || numberN < 0) {
+        var numberN = Number(prompt("Enter a positive number:"));
+    }
+    var array = new Array(numberN);
+    for (var index = 0; index < array.length; index++) {
+        while (isNaN(array[index])) {
+            array[index] = Number(prompt("Enter an element with index [" + index + "] of the array."));
+        }
+    }
+    var arrayNew = new Array(numberN);
+    arrayNew[0] = array[1];
+    arrayNew[numberN - 1] = array[numberN - 2];
+
+    for (var index = 1; index < arrayNew.length - 1; index++) {
+        arrayNew[index] = array[index - 1] + array[index + 1];
+    }
+    alert("The new array is: " + arrayNew);
+</script>

@@ -1,0 +1,38 @@
+<script>
+    while (isNaN(numberN) || numberN < 0) {
+        var numberN = Number(prompt("Enter a positive number:"));
+    }
+
+    var array = new Array(numberN);
+    for (var index = 0; index < array.length; index++) {
+        while (isNaN(array[index])) {
+            array[index] = Number(prompt("Enter an element with index [" + index + "] of the array."));
+        }
+    }
+
+    var numberOfSequense = array[0];
+    var numberOfMaxSecuense = numberOfSequense;
+    var count = 1;
+    var maxCount = 1;
+    //fiding the longest sequence
+    for (var index = 1; index < array.length; index++) {
+        if (array[index] === array[index - 1]) {
+            numberOfSequense = array[index];
+            count++;
+        } else {
+            numberOfSequense = array[index];
+            count = 1;
+        }
+        if (maxCount < count) {
+            maxCount = count;
+            numberOfMaxSecuense = numberOfSequense;
+        }
+    }
+    // print the result
+    var result = "";
+    for (var index = 0; index < maxCount - 1; index++) {
+        result += numberOfMaxSecuense + ", ";
+    }
+    result += numberOfMaxSecuense;
+    alert(result);
+</script>
