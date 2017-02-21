@@ -1,0 +1,21 @@
+#wrapper {
+    margin: auto;
+}
+
+.roulette {
+    background-image: url(roulette.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+}
+
+#ball {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 285px;
+    left: 140px;
+    background-color: grey;
+    border-radius: 50%;
+}

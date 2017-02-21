@@ -1,0 +1,35 @@
+#wrapper {
+    margin: auto;
+}
+
+header {
+    background-color: cadetblue;
+    height: 150px;
+}
+
+main {
+    margin: 5px 0 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section,
+aside {
+    display: inline-flex;
+    height: 400px;
+}
+
+aside {
+    width: 29%;
+    background-color: deeppink;
+}
+
+section {
+    width: 70%;
+    background-color: lawngreen;
+}
+
+footer {
+    background-color: blue;
+    height: 150px;
+}

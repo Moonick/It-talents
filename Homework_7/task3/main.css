@@ -1,0 +1,40 @@
+#wrapper {
+    margin: auto;
+}
+
+header {
+    background-color: black;
+    height: 50px;
+}
+
+main {
+    margin: 5px 0 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section,
+aside {
+    display: inline-flex;
+    height: 400px;
+}
+
+.left {
+    width: 400px;
+    background-color: purple;
+}
+
+.right {
+    width: 400px;
+    background-color: red;
+}
+
+section {
+    width: 500px;
+    background-color: green;
+}
+
+footer {
+    background-color: blue;
+    height: 50px;
+}

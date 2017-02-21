@@ -1,0 +1,34 @@
+header {
+    background-color: cadetblue;
+    height: 150px;
+}
+
+main {
+    margin: 5px 50px;
+}
+
+.content {
+    background-color: green;
+    height: 250px;
+}
+
+section {
+    width: 49%;
+}
+
+footer {
+    display: inline-flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+}
+
+.left {
+    background-color: purple;
+    margin: 5px 5px 0 0;
+}
+
+.right {
+    background-color: mediumblue;
+    margin: 5px 0 0 5px;
+}

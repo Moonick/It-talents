@@ -1,0 +1,52 @@
+#wrapper {
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0 100px;
+}
+
+header {
+    background-color: #4483C7;
+    height: 50px;
+    border-bottom: 2px solid black;
+}
+
+#title {
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    color: lightslategray;
+    padding: 8px 5px;
+}
+
+h2,
+p {
+    padding: 8px 5px;
+    margin: 0;
+}
+
+div>p:last-child {
+    color: lightslategray;
+}
+
+main {
+    margin: 5px 50px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.back-color {
+    background-color: #538620;
+    margin: 0;
+    padding: 5px 5px;
+    color: white;
+}
+
+article {
+    border: 1px solid #538620;
+    margin: 15px 0;
+    background-color: #FFFFEE;
+}

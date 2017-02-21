@@ -1,0 +1,575 @@
+    #wrapper {
+        /*border: 2px solid blue;*/
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+    }
+    
+    .top {
+        height: 90px;
+    }
+    
+    .navbar-default .navbar-brand {
+        color: #FFF;
+        margin: 0;
+        font-size: 3.375em;
+        font-weight: 900;
+    }
+    
+    @media all and (max-width:600px) {
+        .navbar-default .navbar-brand {
+            font-size: 2.375em;
+        }
+    }
+    
+    .navbar-fixed-top {
+        background-color: #1F2324;
+        border: none;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    ul.navbar-right li {
+        color: #707B7F;
+    }
+    
+    .navbar-header>a.navbar-default {
+        font-size: 3.375em;
+    }
+    
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #FFF5FF;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    header {
+        background-color: #F73B4C;
+    }
+    
+    header nav {
+        width: 75%;
+        margin: auto;
+    }
+    
+    @media all and (max-width:1200px) {
+        header nav {
+            width: 100%;
+        }
+    }
+    
+    header nav ul {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    header nav ul li {
+        float: left;
+        width: 16.66%;
+        padding: 2em 0;
+        text-align: center;
+    }
+    
+    @media all and (max-width:970px) {
+        header nav ul li {
+            width: 33.33%;
+            padding: 1.5em 0;
+        }
+    }
+    
+    @media all and (max-width:500px) {
+        header nav ul li {
+            width: 100%;
+            padding: 1em 0;
+        }
+    }
+    
+    header nav ul li>a {
+        font-size: 1.1em;
+        padding: 0.6em;
+    }
+    
+    header nav ul li>a:hover {
+        color: #1F2324;
+        border: 1px solid #FFF5FF;
+        border-radius: 25px;
+        background-color: #FFF5FF;
+        text-decoration: none;
+    }
+    
+    #myCarousel img {
+        width: 100%;
+        height: auto;
+        /*opacity: 0.8;*/
+    }
+    
+    #myCarousel .heading-caruosel {
+        position: fixed;
+        padding: 250px 350px 0 350px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    @media all and (max-width:970px) {
+        #myCarousel .heading-caruosel {
+            padding: 100px 200px 0 200px;
+        }
+    }
+    
+    @media all and (max-width:800px) {
+        #myCarousel .heading-caruosel {
+            padding: 100px 100px 0 100px;
+        }
+    }
+    
+    @media all and (max-width:670px) {
+        #myCarousel .heading-caruosel {
+            padding: 50px 50px 0 50px;
+        }
+    }
+    
+    @media all and (max-width:600px) {
+        #myCarousel .heading-caruosel {
+            padding: 0 50px 0 50px;
+        }
+    }
+    
+    #myCarousel .heading-caruosel h2,
+    #movies h2,
+    #genre h2,
+    #mailForm h2,
+    #fanCarousel h2 {
+        padding: 20px 0;
+        font-size: 3.75em;
+        line-height: 1;
+        font-weight: 700;
+    }
+    
+    @media all and (max-width:870px) {
+        #myCarousel .heading-caruosel h2,
+        #movies h2,
+        #genre h2,
+        #mailForm h2,
+        #fanCarousel h2 {
+            font-size: 2.75em;
+        }
+    }
+    
+    @media all and (max-width:600px) {
+        #myCarousel .heading-caruosel h2,
+        #movies h2,
+        #genre h2,
+        #mailForm h2,
+        #fanCarousel h2 {
+            font-size: 1.75em;
+        }
+    }
+    
+    #myCarousel .heading-caruosel p {
+        font-size: 1.3em;
+        font-weight: 300;
+        color: #FFF5FF;
+        padding: 25px 0;
+    }
+    
+    @media all and (max-width:800px) {
+        #myCarousel .heading-caruosel p {
+            font-size: 1em;
+        }
+    }
+    
+    .button-carousel,
+    #mailForm form .button-submit {
+        display: inline-block;
+        text-decoration: none;
+        color: #FFFFFF;
+        width: 150px;
+        border: 1px solid #FFFFFF;
+        border-radius: 30px;
+        margin: 10px;
+        padding: 20px;
+        text-transform: uppercase;
+        font-size: 0.82em;
+        font-weight: 300;
+    }
+    
+    .button-carousel:hover,
+    #mailForm form .button-submit:hover {
+        background-color: #F73B4C
+    }
+    
+    #genre {
+        background-image: url("../images/parallax1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    
+    #genre h2,
+    #mailForm h2 {
+        font-size: 3.75em;
+        line-height: 1;
+        font-weight: 700;
+        font-weight: bold;
+        padding: 90px 0;
+    }
+    
+    @media all and (max-width:870px) {
+        #genre h2,
+        #mailForm h2 {
+            font-size: 2.75em;
+            padding: 60px 0;
+        }
+    }
+    
+    @media all and (max-width:760px) {
+        #genre h2,
+        #mailForm h2 {
+            font-size: 2.25em;
+            padding: 60px 0;
+        }
+    }
+    
+    @media (max-width: 650px) {
+        #genre h2,
+        #mailForm h2 {
+            padding: 50px 0;
+        }
+    }
+    
+    @media all and (max-width:550px) {
+        #genre h2,
+        #mailForm h2 {
+            font-size: 1.75em;
+            padding: 60px 0;
+        }
+    }
+    
+    #genre p {
+        font-weight: 300;
+        line-height: 1.35;
+        margin: 0 140px;
+        box-sizing: border-box;
+    }
+    
+    @media all and (max-width:800px) {
+        #genre p {
+            margin: 0 80px;
+        }
+    }
+    
+    #genre .radio {
+        padding: 50px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+    @media all and (max-width:800px) {
+        #genre .radio {
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+    }
+    
+    @media all and (max-width:650px) {
+        #genre .radio {
+            display: flex;
+            flex-flow: column wrap;
+        }
+    }
+    
+    #genre .radio ul li {
+        padding: 10px;
+        text-align: left;
+    }
+    
+    @media all and (max-width:650px) {
+        #genre .radio ul li {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+    #genre .radio ul li a:last-child:hover {
+        color: #F73B4C;
+    }
+    
+    #movies {
+        background-color: #1F2324;
+        height: 100%;
+        padding: 80px;
+        text-align: center;
+    }
+    
+    #moviesWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        box-sizing: border-box;
+    }
+    
+    #movies #moviesWrapper article,
+    #movies #popular article {
+        margin: 20px 5px;
+    }
+    
+    #movies #moviesWrapper article .movie-image {
+        max-height: 70%;
+        overflow: hidden;
+    }
+    
+    #movies #moviesWrapper article .movies-footer {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    #movies #moviesWrapper article img,
+    #movies #popular article img {
+        max-width: 100%;
+        transition: 0.5s;
+    }
+    
+    #movies #moviesWrapper article img:hover,
+    #movies #popular article img:hover {
+        transform: scale(1.1);
+    }
+    
+    #movies #moviesWrapper article .width-pos {
+        font-weight: bold;
+        width: 33.33%;
+        height: auto;
+        padding-bottom: 16px;
+    }
+    
+    #movies #moviesWrapper article a.fa:hover {
+        color: #F73B4C;
+    }
+    
+    #movies #moviesWrapper article .movies-footer {
+        box-sizing: border-box;
+        position: relative;
+        bottom: 67px;
+        left: 0;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+        background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to 90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+        /* IE6-9 */
+    }
+    
+    #moviesWrapper article h5 {
+        font-size: 1.5em;
+        font-weight: 500;
+        margin: 5px 0 30px 0;
+        padding-top: 10px;
+    }
+    
+    #moviesWrapper article p {
+        font-size: 1em;
+        font-weight: 300;
+        color: #565f61;
+    }
+    /*----------------------------*/
+    
+    #movies #popular {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    #movies #popular h5 {
+        font-size: 1.5em;
+        font-weight: 400;
+        padding: 10px 0;
+    }
+    /*-------rating stars--------*/
+    
+    .rate {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        cursor: pointer;
+    }
+    
+    .rate>span {
+        display: inline-block;
+        position: relative;
+        width: 1.1em;
+    }
+    
+    .rate>span:hover:before,
+    .rate>span:hover~span:before {
+        content: "\2605";
+        position: absolute;
+    }
+    /*---------------------------------*/
+    
+    #fanCarousel {
+        background-image: url("../images/parallax2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    .carousel .slide {
+        box-sizing: border-box;
+    }
+    
+    #fanCarousel img {
+        display: block;
+        border-radius: 100%;
+        margin: auto;
+    }
+    
+    #fanCarousel blockquote {
+        padding: 0 150px;
+    }
+    
+    @media all and (max-width:700px) {
+        #fanCarousel blockquote {
+            padding: 0 100px;
+        }
+    }
+    
+    #fanCarousel blockquote h5 {
+        padding: 15px 0 5px 0;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+    
+    #fanCarousel blockquote em {
+        font-style: italic;
+    }
+    
+    #fanCarousel blockquote p {
+        padding-top: 25px;
+        font-size: 1.3em;
+        margin-bottom: 55px;
+    }
+    
+    @media all and (max-width:700px) {
+        #fanCarousel blockquote p {
+            font-size: 1.1em;
+        }
+    }
+    
+    #mailForm {
+        background-image: url("../images/parallax1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    
+    #mailForm form {
+        text-align: left;
+        color: #626566;
+        padding: 50px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    #mailForm form input,
+    textarea {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #707B7F;
+    }
+    
+    #mailForm form .name-email {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 100px;
+    }
+    
+    #mailForm form input[type=name],
+    input[type=email] {
+        width: 40%;
+        line-height: 3em;
+    }
+    
+    #mailForm form input:focus,
+    textarea:focus {
+        outline: none;
+    }
+    
+    #mailForm form textarea {
+        box-sizing: border-box;
+        display: inline-block;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+    
+    #map {
+        height: 400px;
+        width: 100%;
+        background-color: grey;
+    }
+    
+    footer {
+        background-color: #1F2324;
+        padding: 50px 20px 100px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    footer p {
+        width: 25%;
+    }
+    
+    footer h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+        width: 50%;
+    }
+    
+    @media all and (max-width:950px) {
+        footer h3 {
+            font-size: 1.1em;
+        }
+    }
+    
+    @media all and (max-width:800px) {
+        footer h3 {
+            font-size: 1em;
+        }
+    }
+    
+    footer div {
+        width: 25%;
+    }
+    
+    footer div i {
+        color: #43494C;
+        padding: 5px;
+    }
+    
+    footer i:hover {
+        cursor: pointer;
+        color: white;
+    }
