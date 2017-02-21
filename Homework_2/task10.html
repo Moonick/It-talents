@@ -1,0 +1,17 @@
+<script>
+    var numberN = Number(prompt("Enter the number N:"));
+
+    var isPrime = true;
+
+    for (var i = 2; i <= (numberN >> 1); i++) {
+        if (numberN % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+    if (isPrime) {
+        console.log("The " + numberN + " is prime.");
+    } else {
+        console.log("The " + numberN + " is not prime.");
+    }
+</script>

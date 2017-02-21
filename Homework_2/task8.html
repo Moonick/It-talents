@@ -1,0 +1,15 @@
+<script>
+    var numberN = Number(prompt("Enter the number N:"));
+
+    var i = numberN - 1;
+    var result = "";
+
+    for (var j = 1; j <= numberN; j++) {
+        for (var count = 1; count <= numberN; count++) {
+            result += i;
+        }
+        result += "\n";
+        i += 2;
+    }
+    alert(result);
+</script>

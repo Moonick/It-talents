@@ -1,0 +1,24 @@
+<script>
+    do {
+        var numberA = Number(prompt("Enter the number A:"));
+    } while (isNaN(numberA));
+
+    do {
+        var numberB = Number(prompt("Enter the number B:"));
+    } while (isNaN(numberB));
+
+    var numbers = " ";
+    if (numberA > numberB) {
+        numberA = numberA + numberB;
+        numberB = numberA - numberB;
+        numberA = numberA - numberB;
+    }
+    for (var i = numberA; i <= numberB; i++) {
+        if (i == numberB) {
+            numbers += i;
+            break;
+        }
+        numbers += i + ", ";
+    }
+    alert(numbers);
+</script>

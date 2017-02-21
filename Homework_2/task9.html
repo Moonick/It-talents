@@ -1,0 +1,30 @@
+<script>
+    var numberA = Number(prompt("Enter the number A:"));
+    var numberB = Number(prompt("Enter yhe number B:"));
+
+
+    var pow = 0;
+    var sum = 0;
+    var result = "";
+
+    for (var i = numberA; i <= numberB; i++) {
+        if (i % 3 !== 0) {
+            pow = i * i;
+            sum += pow;
+            if (sum > 200) {
+                result += pow;
+                break;
+            }
+            result += pow + ", ";
+
+
+        } else {
+            if (sum > 200) {
+                result += "skip " + i;
+                break;
+            }
+            result += "skip " + i + ", ";
+        }
+    }
+    alert(result);
+</script>

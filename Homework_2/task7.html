@@ -1,0 +1,13 @@
+<script>
+    var numberA = Number(prompt("Enter the number A:"));
+
+    var numbers = " ";
+    for (var i = 3; i <= numberA; i += 3) {
+        if (i == numberA || i == (numberA - 2)) {
+            numbers += i;
+            break;
+        }
+        numbers += i + ", ";
+    }
+    alert(numbers);
+</script>
