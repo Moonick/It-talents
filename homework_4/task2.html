@@ -1,0 +1,26 @@
+<script>
+    var arr = new Array(4);
+    for (var row = 0; row < arr.length; row++) {
+        arr[row] = new Array(4)
+        for (var col = 0; col < arr[row].length; col++) {
+            do {
+                arr[row][col] = Number(prompt("Enter a number:"));
+            } while (isNaN(arr[row][col]));
+        }
+    }
+    var leftDiagonal = "";
+    var rigthDiagonal = "";
+    for (var row = 0; row < arr.length; row++) {
+        for (var col = 0; col < arr[row].length; col++) {
+            if (row === col) {
+                leftDiagonal += arr[row][col] + " ";
+            }
+            if (col + row === arr.length - 1) {
+                rigthDiagonal += arr[row][col] + " ";
+            }
+        }
+    }
+
+    alert(leftDiagonal);
+    alert(rigthDiagonal);
+</script>
