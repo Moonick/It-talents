@@ -1,0 +1,24 @@
+<script>
+    var debugMode = false;
+
+    var randomNumber = Number(prompt("Въведете 4-цифренo естествено число от интервала [1000.. 9999]:"));
+
+    while (isNaN(randomNumber) || randomNumber < 1000 || randomNumber > 9999) {
+        randomNumber = Number(prompt("Некоректни данни!\nВъведете 4-цифренo естествено число от интервала [1000.. 9999]:"));
+    }
+
+    var firstNumber = ((Math.floor(randomNumber / 1000) * 10) + (randomNumber % 10));
+    var secondNumber = (Math.floor((randomNumber % 1000) / 10));
+
+    if (debugMode) {
+        console.log(randomNumber);
+    }
+
+    if (firstNumber > secondNumber) {
+        alert("по-голямо (" + firstNumber + ">" + secondNumber + ")");
+    } else if (firstNumber === secondNumber) {
+        alert("равни (" + firstNumber + "=" + secondNumber + ")");
+    } else {
+        alert("по-малко (" + firstNumber + "<" + secondNumber + ")");
+    }
+</script>

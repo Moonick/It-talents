@@ -1,0 +1,34 @@
+<script>
+    var debugMode = true;
+    var liters = Number(prompt("Въведете какъв е капацитетът на цистерната?\nЧисло в интервал [10 ... 9999]:"));
+    while (isNaN(liters) || liters < 10 || liters > 9999) {
+        liters = Number(prompt("Невалидни данни! Въведете число в интервал [10 ... 9999]:"));
+    }
+
+    var numberOfbuckets = Math.floor(liters / 5);
+    var decimalDigit = (liters % 5);
+
+    switch (decimalDigit) {
+
+        case 1:
+            alert(numberOfbuckets + " пъти по 2 литра,\n" + numberOfbuckets + " пъти по 3 литра\nдопълнително половин кофа от 2 литра");
+            break;
+        case 2:
+            alert(numberOfbuckets + " пъти по 2 литра,\n" + numberOfbuckets + " пъти по 3 литра\nдопълнително кофа от 2 литра");
+            break;
+        case 3:
+            alert(numberOfbuckets + " пъти по 2 литра,\n" + numberOfbuckets + " пъти по 3 литра\nдопълнително кофа от 3 литра");
+            break;
+        case 4:
+            alert(numberOfbuckets + " пъти по 2 литра,\n" + numberOfbuckets + " пъти по 3 литра\nдопълнително 2 кофи от 2 литра");
+            break;
+        default:
+            alert(numberOfbuckets + " пъти по 2 литра,\n" + numberOfbuckets + " пъти по 3 литра\nбез допълнителни кофи");
+            break;
+    }
+
+
+    if (debugMode) {
+        console.log(numberOfbuckets);
+    }
+</script>

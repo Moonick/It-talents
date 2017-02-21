@@ -1,0 +1,19 @@
+<script>
+    var temp = Number(prompt("Въведете температура в градус Целзий:"));
+
+    while (isNaN(temp) || temp < -100 || temp > 100) {
+        temp = Number(prompt("Невалидни данни! Въведете температура в градус Целзий:"));
+    }
+
+    if (temp < -20) {
+        alert("Ледено студено!");
+    } else if (temp >= -20 && temp < 0) {
+        alert("Студено!");
+    } else if (temp >= 0 && temp < 15) {
+        alert("Хладно!");
+    } else if (temp >= 15 && temp < 25) {
+        alert("Топло!");
+    } else {
+        alert("Горещо!");
+    }
+</script>

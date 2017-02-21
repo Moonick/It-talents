@@ -1,0 +1,40 @@
+<script>
+    var number = Number(prompt("Въведете положително трицифрено число:"));;
+    var firstDigit = 0;
+    var secondDigit = 0;
+    var thirdDigit = 0;
+
+
+    while (true) {
+        if (isNaN(number) || number < 111 || number > 999 || number % 1) {
+            number = Number(prompt("Невалидни данни! Въведете положително трицифрено число:"));
+            continue;
+        } else {
+            firstDigit = Math.floor(number / 100);
+            secondDigit = Math.floor((number % 100) / 10);
+            thirdDigit = number % 10;
+
+            if (firstDigit === 0 || secondDigit === 0 || thirdDigit === 0) {
+                number = Number(prompt("Невалидни данни! Въведете положително трицифрено число:"));
+                continue;
+            } else {
+                if (number % firstDigit === 0) {
+                    alert(number + " се дели на " + firstDigit);
+                } else {
+                    alert(number + " не се дели на " + firstDigit);
+                }
+                if (number % secondDigit === 0) {
+                    alert(number + " се дели на " + secondDigit);
+                } else {
+                    alert(number + " не се дели на " + secondDigit);
+                }
+                if (number % thirdDigit === 0) {
+                    alert(number + " се дели на " + thirdDigit);
+                } else {
+                    alert(number + " не се дели на " + thirdDigit);
+                }
+                break;
+            }
+        }
+    }
+</script>

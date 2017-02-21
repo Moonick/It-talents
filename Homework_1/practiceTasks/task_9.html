@@ -1,0 +1,22 @@
+<script>
+    var numberA = Number(prompt("Въведете естествено число в интервала [10..99], което е равно на А :"));
+    while (isNaN(numberA) || numberA < 10 || numberA > 99) {
+        numberA = Number(prompt("Невалидни данни! Въведете естествено число в интервала [10..99], което е равно на А :"));
+    }
+
+    var NumberB = Number(prompt("Въведете естествено число в интервала [10..99], което е равно на B:"));
+    while (isNaN(NumberB) || NumberB < 10 || NumberB > 99) {
+        NumberB = Number(prompt("Невалидни данни! Въведете естествено число в интервала [10..99], което е равно на А :"));
+    }
+
+    var product = numberA * NumberB;
+    var lastDigit = product % 10;
+
+    if (lastDigit === 0) {
+        alert(product + " , " + lastDigit);
+    } else if (lastDigit % 2 === 0) {
+        alert(product + " , " + lastDigit + " четна");
+    } else {
+        alert(product + " , " + lastDigit + " нечетна");
+    }
+</script>

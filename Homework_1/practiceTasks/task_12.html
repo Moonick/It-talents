@@ -1,0 +1,26 @@
+<script>
+    var date = prompt("Въведете три числа за ден, месец, година:");
+    var result = date.split(", ");
+    var day = result[0];
+    var month = result[1];
+    var year = result[2];
+
+    console.log(year % 1);
+
+    while (true) {
+        if (result.length === 3) {
+            if ((day % 1 === 0 && (day >= 1 && day <= 31)) &&
+                (month % 1 === 0 && (month >= 1 && month <= 12)) &&
+                (year % 1 === 0 && (year >= 1 && year <= 3000))) {
+                console.log(result);
+                break;
+            } else {
+                date = prompt("Грешни данни! Въведете три числа за ден, месец, година:");
+                continue;
+            }
+        } else {
+            date = prompt("Грешни данни! Въведете три числа за ден, месец, година:");
+            continue;
+        }
+    }
+</script>

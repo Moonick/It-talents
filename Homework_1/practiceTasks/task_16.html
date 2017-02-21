@@ -1,0 +1,20 @@
+<script>
+    var number = Number(prompt("Въведете трицифрено естествено число:"));
+
+    while (isNaN(number) || number < 100 || number > 999) {
+        number = Number(prompt("Грешни данни! Въведете трицифрено естествено число:"));
+    }
+    var firstDigit = Math.floor(number / 100);
+    var secondDigit = Math.floor((number % 100) / 10);
+    var thirdDigit = number % 10;
+
+    if (firstDigit > secondDigit && secondDigit > thirdDigit) {
+        alert("Цифрите са в възходящ ред.");
+    } else if (firstDigit < secondDigit && secondDigit < thirdDigit) {
+        alert("Цифрите са в низходящ ред.");
+    } else if (firstDigit === secondDigit && secondDigit === thirdDigit) {
+        alert("Цифрите са равни.");
+    } else {
+        alert("Цифрите са ненаредени.");
+    }
+</script>
